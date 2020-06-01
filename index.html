@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio |  mail me</title>
+</head>
+<body>
+    <form action="./index.php" method="post" class="form-signin">
+        <div class="form-label-group">
+            <label for="inputEmail">From <span style="color: #FF0000">*</span></label>
+            <input type="text" name="fromEmail" id="fromEmail" class="form-control"  value="info@codingbirdsonline.com" readonly required autofocus>
+        </div> 
+        <div class="form-label-group">
+            <label for="inputEmail">To <span style="color: #FF0000">*</span></label>
+            <input type="text" name="toEmail" id="toEmail" class="form-control" placeholder="Email address" required autofocus>
+        </div> 
+        <label for="inputPassword">Subject <span style="color: #FF0000">*</span></label>
+        <div class="form-label-group">
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+        </div>
+        <label for="inputPassword">Message <span style="color: #FF0000">*</span></label>
+        <div class="form-label-group">
+            <textarea  id="message" name="message" class="form-control" placeholder="Message" required ></textarea>
+        </div> <br>
+        <button type="submit" name="sendMailBtn" class="btn btn-lg btn-primary btn-block text-uppercase" >Send Email</button>
+    </form>
+</body>
+</html>
